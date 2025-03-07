@@ -1,3 +1,36 @@
-.Header {text-align: center;}
-.Header {color:#0000ff;}
-.Footer {text-align: center;}
+header {
+    color: #00aeff;
+    text-align: center;
+    padding-top: 5px;
+}
+
+footer {
+    color: #000000;
+    text-align: center;
+}
+
+body {
+    margin: 10px;
+    padding-top: 60px;
+    font-family: sans-serif;
+}
+
+.resume-container {
+    text-align: center;
+}
+
+.resume-link {
+    color: #00aeff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #00aeff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.resume-link:hover {
+    background-color: #00aeff;
+    color: white;
+}

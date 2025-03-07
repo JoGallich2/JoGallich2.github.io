@@ -1,0 +1,88 @@
+/* Navigation Bar Styling */
+nav {
+    background-color: #000000;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    padding: 12px 0;
+}
+
+/* Flexbox for the nav list */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* Navigation List Styling */
+nav li {
+    display: inline-block;
+    position :relative;
+}
+
+/* Navigation Link Styling */
+nav li a {
+    color: #00aeff;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 5px 50px;
+    display: flex;
+}
+
+/* Hover affect for Nav Items */
+nav li a:hover {
+    box-shadow: 0 0 10px 0 #00aeff;
+    color: white;
+}
+
+nav li a:active {
+    box-shadow: 0 0 15px 0 #00ff40;
+    color: white;
+}
+
+/* DROPDOWN MENU */
+nav li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #121212;
+    box-shadow: 0 0 10px 0 #00aeff;
+    padding: 0;
+    list-style: none;
+    min-width: 200px;
+}
+
+/* Dropdown items */
+nav li ul li {
+    display: block;
+}
+
+nav li ul li a {
+    color: #00aeff;
+    font-size: 20px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    border-radius: 5px;
+}
+
+/* Hover affect for Dropdown Items */
+nav li ul li a:hover {
+    box-shadow: 0 0 10px 0 #00aeff;
+    color: white;
+}
+
+/* Display Dropdown Items on Hover */
+nav li:hover ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
