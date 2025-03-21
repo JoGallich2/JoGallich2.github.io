@@ -1,21 +1,62 @@
+/* Styling information for my Header */
 header {
     color: #00aeff;
     text-align: center;
-    padding-top: 5px;
+    width: 100%;
 }
 
+/* Styling information for my Footer */
 footer {
     color: #000000;
     text-align: center;
+    width: 100%;
 }
 
+/* Styling information for my Body */
 body {
     margin: 10px;
     padding-top: 60px;
     font-family: sans-serif;
 }
 
-.resume-container {
+/* About WebPage Section Layout */
+.about-header{
+    color: #00aeff;
+    padding-left: 25px;
+    text-align: left;
+    width: 100%;
+}
+.about-header3{
+    color: #000000;
+    font-weight: bold;
+    text-align: center;
+}
+hr{
+    margin: 20px 0;
+    width: 66.5%;
+}
+
+blockquote{
+    text-align: center;
+}
+
+.about-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 1% 0 1%;
+    margin: auto;
+    
+}
+
+.about-text {
+    flex: 2;
+    padding-right: 15px;
+    border-right: 2px solid #ccc;
+}
+
+.about-media {
+    flex: 1;
     text-align: center;
 }
 
@@ -35,8 +76,12 @@ body {
     color: white;
 }
 
+/* Reflection WebPage Section Layout */
 .reflection-container {
-    padding: 15px;
+    display: flex;
+    flex-direction:column;
+    padding: 0 1% 0 1%;
+    justify-content: space-evenly;
     margin: 20px;
     background-color: #c9c9c9;
 }
@@ -51,4 +96,8 @@ body {
 .reflection::first-letter{
     font-size: large;
     font-weight: bolder; 
+}
+
+@media screen and (max-Width:959px){
+    
 }
