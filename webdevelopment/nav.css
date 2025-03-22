@@ -98,11 +98,7 @@ nav li:hover ul {
     .hamburger {
         height: 50px;
         width: 50px;
-        text-align: left;
-        padding-left: 10px;
+        margin-left: auto;
     }
-    .nav{
-        height: 90px;
-        width: fit-content;
-    }
+    .hamburger{}
 }
