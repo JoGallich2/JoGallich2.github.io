@@ -87,22 +87,48 @@ nav li:hover ul {
     align-items: center;
 }
 
-/* Hide the checkbox */
+/* Hide checkbox */
 #menu-toggle {
     display: none;
 }
 
-/* MOBILE STYLES */
+/* Hamburger Menu Icon */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    padding: 10px;
+    user-select: none;
+}
+
+/* Mobile styles */
 @media screen and (max-width: 959px) {
-    /* Show hamburger menu */
     .hamburger {
-        height: 50px;
-        width: 50px;
-        margin-left: auto;
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
     }
-    .nav{
-        padding: 15px;
+
+    /* Hide nav links by default */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: #000000;
+        text-align: center;
+    }
+
+    .nav-links li {
+        display: block;
+        padding: 10px;
+    }
+
+    /* Show menu when checked */
+    #menu-toggle:checked + .hamburger + .nav-links {
         display: flex;
-        background-color: #00aeff;
     }
 }
