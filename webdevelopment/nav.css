@@ -92,48 +92,14 @@ nav li:hover ul {
     display: none;
 }
 
-/* Hamburger Menu Styling */
-#hamburger {
-    display: none;
-    font-size: 30px;
-    color: #00aeff;
-    cursor: pointer;
-    padding: 10px;
-}
-
 /* MOBILE STYLES */
 @media screen and (max-width: 959px) {
-    /* Stack nav items in a column */
-    nav {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        background-color: #000000;
-    }
-
-    nav ul li {
-        text-align: center;
-        width: 100%;
-    }
-
-    nav ul li a {
-        display: block;
-        padding: 15px;
-    }
-
     /* Show hamburger menu */
-    #hamburger {
-        display: block;
-        text-align: right;
+    .hamburger {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position:relative;
     }
-
-    /* When checkbox is checked, show the menu */
-    #menu-toggle:checked ~ ul {
-        display: flex;
-    }
+    .hamburger{}
 }
