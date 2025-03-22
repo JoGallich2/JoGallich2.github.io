@@ -99,8 +99,10 @@ nav li:hover ul {
         height: 50px;
         width: 50px;
         text-align: left;
+        padding-left: 10px;
     }
     .nav{
-        width: 5%;
+        height: 90px;
+        width: fit-content;
     }
 }
