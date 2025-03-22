@@ -86,3 +86,54 @@ nav li:hover ul {
     flex-direction: column;
     align-items: center;
 }
+
+/* Hide menu items by default on small screens */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: #00aeff;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Hide dropdowns in mobile view */
+.nav-links {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-links ul.dropdown {
+    display: none;
+}
+
+/* Media Query for Mobile Navigation */
+@media screen and (max-width: 959px) {
+    .hamburger {
+        display: block;
+        text-align: left;
+        margin: 10px;
+    }
+
+    /* Hide default nav links */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #000;
+        width: 100%;
+        text-align: left;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    /* Show nav links when menu is active */
+    .nav-links.active {
+        display: flex;
+    }
+
+    /* Hide dropdown items */
+    .dropdown {
+        display: none;
+    }
+}

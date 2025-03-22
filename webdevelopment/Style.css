@@ -20,12 +20,12 @@ body {
 }
 
 /* Index/Homepage WebPage Section Layout */
-.index-header{
+.index-header {
     width: 100%;
     text-align: center;
 }
 
-.index-container{
+.index-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -35,37 +35,27 @@ body {
     border: 2px solid #000000;
 }
 
-@media screen and (max-Width:959px){
-    .index-header{
-        padding-top: 5%;
-        width: 100%;
-    }
-
-    .index-container{
-        width: 100%;
-    }
-
-    
-}
 
 /* About WebPage Section Layout */
-.about-header{
+.about-header {
     color: #00aeff;
     padding-left: 25px;
     text-align: left;
     width: 100%;
 }
-.about-header3{
+
+.about-header3 {
     color: #000000;
     font-weight: bold;
     text-align: center;
 }
-.hr-about{
+
+.hr-about {
     margin: 20px 0;
     width: 66.5%;
 }
 
-blockquote{
+blockquote {
     text-align: center;
 }
 
@@ -76,7 +66,7 @@ blockquote{
     justify-content: space-between;
     padding: 0 1% 0 1%;
     margin: auto;
-    
+
 }
 
 .about-text {
@@ -109,7 +99,7 @@ blockquote{
 /* Reflection WebPage Section Layout */
 .reflection-container {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     padding: 0 1% 0 1%;
     justify-content: space-evenly;
     margin: 20px;
@@ -123,7 +113,55 @@ blockquote{
     text-indent: 30px;
 }
 
-.reflection::first-letter{
+.reflection::first-letter {
     font-size: large;
-    font-weight: bolder; 
+    font-weight: bolder;
+}
+
+@media screen and (max-Width:959px) {
+
+    /* Ensure full-width content */
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Adjust header */
+    .index-header,
+    .about-header {
+        text-align: center;
+        font-size: 24px;
+        padding-top: 10px;
+    }
+
+    /* Stack content in a single column */
+    .index-container,
+    .about-container,
+    .reflection-container {
+        flex-direction: column;
+        text-align: center;
+        width: 95%;
+        margin: auto;
+    }
+
+    .about-text,
+    .about-media {
+        border-right: none;
+        /* Remove vertical divider for mobile */
+        padding: 10px;
+    }
+
+    /* Adjust blockquote for better readability */
+    blockquote {
+        font-size: 16px;
+        text-align: center;
+        padding: 10px;
+        border-left: 3px solid #00aeff;
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 14px;
+        padding: 10px;
+    }
 }
