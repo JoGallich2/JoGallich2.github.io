@@ -99,6 +99,8 @@ nav li:hover ul {
         height: 50px;
         width: 50px;
         margin-left: auto;
+        position:relative;
     }
     .hamburger{}
+}
 }
