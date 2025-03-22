@@ -102,5 +102,8 @@ nav li:hover ul {
         position:relative;
     }
     .hamburger{}
+    .nav{
+        display:none
+    }
 }
 }
