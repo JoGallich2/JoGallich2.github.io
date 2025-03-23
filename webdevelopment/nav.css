@@ -150,6 +150,7 @@ nav {
        =========================== */
 
     /* Mobile Navigation Dropdown Menu Flexbox Styling */
+    /*
     .nav-links ul {
         position: absolute;
         top: 0%;
@@ -158,11 +159,11 @@ nav {
         box-shadow: 0 0 10px 0 #00aeff;
         padding: 0;
         width: fit-content;
-    }
+    }*/
 
     /* Dropdown Menu Display on Hover */
     .nav-links li:hover ul {
-        display: flex;
+        display: none;
         flex-direction: row;
     }
 

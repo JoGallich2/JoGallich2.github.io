@@ -124,6 +124,11 @@ blockquote {
         padding: 0;
     }
 
+    .hr-about {
+        margin: 20px 0;
+        width: 100%;
+    }
+
     /* Adjust header */
     .index-header,
     .about-header {
