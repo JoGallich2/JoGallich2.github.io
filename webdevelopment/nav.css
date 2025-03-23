@@ -1,134 +1,173 @@
-/* Navigation Bar Styling */
+/* ===========================
+   NAVIGATION BAR STYLING
+   =========================== */
+
+/* Main Navigation Bar Styling */
 nav {
     background-color: #000000;
-    text-align: center;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     display: flex;
     justify-content: center;
-    padding: 12px 0;
 }
 
-/* Flexbox for the nav list */
-nav ul {
-    list-style: none;
+/* Navigation Flexbox Styling */
+.nav-links {
     margin: 0;
-    padding: 0;
+    padding: 5px 0 5px 0;
     display: flex;
 }
 
-/* Navigation List Styling */
-nav li {
+/* Navigation Items Styling */
+.nav-links li {
     display: inline-block;
-    position :relative;
+    position: relative;
 }
 
 /* Navigation Link Styling */
-nav li a {
+.nav-links li a {
     color: #00aeff;
-    text-decoration: none;
-    font-size: 30px;
+    text-decoration:none;
+    font-size: 35px;
     font-weight: bold;
     padding: 5px 50px;
     display: flex;
 }
 
-/* Hover affect for Nav Items */
-nav li a:hover {
+
+/* ===========================
+   NAVIGATION HOVER EFFECTS
+   =========================== */
+
+/* Navigation Link Hover Effect */
+.nav-links a:hover {
     box-shadow: 0 0 10px 0 #00aeff;
     color: white;
 }
 
-nav li a:active {
+/* Navigation Link Active Effect */
+.nav-links a:active {
     box-shadow: 0 0 15px 0 #00ff40;
     color: white;
 }
 
-/* DROPDOWN MENU */
-nav li ul {
+/* ===========================
+   DROPDOWN MENU STYLING
+   =========================== */
+
+/* Dropdown Menu Flexbox Styling */
+.nav-links ul {
     display: none;
     position: absolute;
     top: 100%;
     background-color: #121212;
     box-shadow: 0 0 10px 0 #00aeff;
     padding: 0;
-    list-style: none;
-    min-width: 200px;
+    width: 100%;
 }
 
-/* Dropdown items */
-nav li ul li {
-    display: block;
-}
-
-nav li ul li a {
+/* Dropdown Link Styling */
+.nav-links ul a {
     color: #00aeff;
     font-size: 20px;
     padding: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
     border-radius: 5px;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
-/* Hover affect for Dropdown Items */
-nav li ul li a:hover {
+/* Dropdown Menu Hover Effect */
+.nav-links ul a:hover {
     box-shadow: 0 0 10px 0 #00aeff;
     color: white;
 }
 
-/* Display Dropdown Items on Hover */
-nav li:hover ul {
+/* Dropdown Menu Display on Hover */
+.nav-links li:hover ul {
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
+/* ===========================
+   HAMBURGER MENU STYLING
+   =========================== */
+
 /* Hide checkbox */
-#menu-toggle {
+#hamburger-active {
     display: none;
 }
 
-/* Hamburger Menu Icon */
+/* Hamburger Icon Styling */
 .hamburger {
     font-size: 30px;
     cursor: pointer;
-    display: none;
+    display: none; /* Hidden by default on larger screens */
     padding: 10px;
-    user-select: none;
+    user-select: none; /* Prevents text selection */
 }
 
-/* Mobile styles */
+/* ===========================
+   RESPONSIVE MOBILE STYLING
+   =========================== */
+
 @media screen and (max-width: 959px) {
+    /* Mobile Hamburger Icon Styling */
     .hamburger {
         display: block;
         position: absolute;
+        z-index: 999;
         top: 15px;
         right: 20px;
+        color: #00aeff;
     }
 
-    /* Hide nav links by default */
+    /* ===========================
+       NAVIGATION BAR STYLING
+       =========================== */
+
+    /* Mobile Navigation Flexbox Styling */
     .nav-links {
         display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
+        flex-direction: column; /* Stacks links vertically */
         left: 0;
-        width: 100%;
+        width: 85%;
         background-color: #000000;
-        text-align: center;
+        position: relative;
     }
 
+    /* Mobile Navigation Items Flexbox Styling */
     .nav-links li {
         display: block;
+        width: fit-content;
         padding: 10px;
+        position: relative; /* Ensures dropdown positioning works */
     }
 
-    /* Show menu when checked */
-    #menu-toggle:checked + .hamburger + .nav-links {
+    /* ===========================
+       DROPDOWN MENU STYLING
+       =========================== */
+
+    /* Mobile Navigation Dropdown Menu Flexbox Styling */
+    .nav-links ul {
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        background-color: #121212;
+        box-shadow: 0 0 10px 0 #00aeff;
+        padding: 0;
+        width: fit-content;
+    }
+
+    /* Dropdown Menu Display on Hover */
+    .nav-links li:hover ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* Mobile Menu Display on Click */
+    #hamburger-active:checked + .hamburger + .nav-links {
         display: flex;
     }
 }

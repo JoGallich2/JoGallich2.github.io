@@ -33,12 +33,15 @@ Tested:  March 21, 2025 Passed on W3C Validator
 <body>
 
     <nav>
-        <ul>
+        <input type="checkbox" id="hamburger-active">
+        <label for="hamburger-active" class="hamburger">&#9776;</label>
+    
+        <ul class = nav-links>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li>
                 <a href="projects.html">Projects</a>
-                <ul>
+                <ul class = project-links>
                     <li><a href="#">Link 1</a></li>
                     <li><a href="#">Link 2</a></li>
                     <li><a href="#">Link 3</a></li>
@@ -98,6 +101,7 @@ Tested:  March 21, 2025 Passed on W3C Validator
                 </p>
             </div>
             <div class=about-media>
+                <img src ="Assets/ProfessionalPhoto.png" height="400" width="400">
                 <p>
                     <a href="JosephGallichioResume.pdf" class="resume-link">You Can View My Resume Here</a>
                 </p>
