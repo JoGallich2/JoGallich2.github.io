@@ -145,6 +145,7 @@ blockquote {
         text-align: center;
         width: 95%;
         margin: auto;
+        font-size: clamp(.5rem, 2vw, 2rem);
     }
 
     .about-text,
@@ -160,6 +161,7 @@ blockquote {
         text-align: center;
         padding: 10px;
         border-left: 3px solid #00aeff;
+        font-size: clamp(.5rem, 2vw, 2rem);
     }
 
     /* Footer adjustments */
