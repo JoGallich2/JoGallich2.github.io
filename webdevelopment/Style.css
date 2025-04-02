@@ -94,6 +94,51 @@ blockquote {
     color: white;
 }
 
+/* Project WebPage Section Layout */
+.projects-header {
+    color: #00aeff;
+    padding-left: 25px;
+    text-align: Center;
+    width: 100%;
+}
+
+.projects-header2 {
+    color: #000000;
+    font-weight: bold;
+    text-align: left;
+}
+
+.projects-header3 {
+    color: #000000;
+    font-weight: lighter;
+    text-align: left;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0 1% 0 1%;
+    margin: auto;
+    font-size: large;
+}
+
+.projects-text {
+    flex: 2;
+    padding-right: 15px;
+    line-height: 1.6;
+    padding: 10px;
+}
+
+.project1, .project2, .project3 {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #333333;
+    border-radius: 10px;
+}
+
+
 /* Reflection WebPage Section Layout */
 .reflection-container {
     display: flex;
