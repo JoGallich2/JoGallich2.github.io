@@ -78,6 +78,7 @@ nav{
 /* About WebPage Section Layout */
 .about-header {
     padding-left: 25px;
+    font-family: 'Merriweather', serif;
 }
 
 .hr-about {
@@ -204,6 +205,7 @@ blockquote {
     /* Stack content in a single column */
     .index-container,
     .about-container,
+    .projects-container,
     .reflection-container {
         flex-direction: column;
         text-align: center;
@@ -229,5 +231,58 @@ blockquote {
     footer {
         font-size: 14px;
         padding: 20px;
+    }
+}
+
+/* Wepgage Print Section */
+@media print {
+    body {
+        margin: 1in;
+        /* color: black; */
+        font-family: serif;
+    }
+
+    h1 {
+        font-family: 'Merriweather', serif; /* Custom font still applied */
+        font-size: 24pt;
+    }
+
+    p,
+    ul,
+    ol,
+    blockquote,
+    footer {
+        color: black;
+        font-family: serif;
+        font-size: 12pt;
+    }
+
+    /* Hide non-essential elements like nav */
+    nav,
+    .hamburger,
+    .about-media {
+        display: none !important;
+    }
+
+    /* Ensure everything fits on one page */
+    .about-container {
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    blockquote {
+        font-style: italic;
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    footer {
+        text-align: center;
+        border-top: 1px solid black;
+        margin-top: 20px;
+        padding-top: 10px;
+        font-size: 10pt;
     }
 }
