@@ -6,7 +6,7 @@ header, footer {
 }
 
 footer{
-    background-image: url('images/footer-bg.jpg');
+    background-image: url('Assets/Images/footer-bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
