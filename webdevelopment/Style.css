@@ -5,13 +5,31 @@ header, footer {
     width: 100%;
 }
 
+footer{
+    background-image: url('images/footer-bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px 10px;
+    color: white;
+    height: auto;
+}
+
 footer a {
     text-decoration: none;
-    color: #000000;
+    color: #ffffff;
     transition: color 0.3s ease;
 }
+
 footer a:hover {
     color: #0024f1;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
 }
 
 .index-header,
