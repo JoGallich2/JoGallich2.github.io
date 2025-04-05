@@ -32,6 +32,11 @@ footer a:hover {
     margin-right: 5px;
 }
 
+/* Hover effect to enlarge icon */
+.icon:hover {
+    transform: scale(2);
+}
+
 .index-header,
 .about-header,
 .projects-header{
