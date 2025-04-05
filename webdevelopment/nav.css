@@ -1,0 +1,175 @@
+/* ===========================
+   NAVIGATION BAR STYLING
+   =========================== */
+
+/* Main Navigation Bar Styling */
+nav {
+    background-color: #000000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* Navigation Flexbox Styling */
+.nav-links {
+    margin: 0;
+    padding: 5px 0 5px 0;
+    display: flex;
+}
+
+/* Navigation Items Styling */
+.nav-links li {
+    display: inline-block;
+    position: relative;
+}
+
+/* Navigation Link Styling */
+.nav-links li a {
+    color: #00aeff;
+    text-decoration:none;
+    font-size: 35px;
+    font-weight: bold;
+    padding: 5px 50px;
+    display: flex;
+}
+
+
+/* ===========================
+   NAVIGATION HOVER EFFECTS
+   =========================== */
+
+/* Navigation Link Hover Effect */
+.nav-links a:hover {
+    box-shadow: 0 0 10px 0 #00aeff;
+    color: white;
+}
+
+/* Navigation Link Active Effect */
+.nav-links a:active {
+    box-shadow: 0 0 15px 0 #00ff40;
+    color: white;
+}
+
+/* ===========================
+   DROPDOWN MENU STYLING
+   =========================== */
+
+/* Dropdown Menu Flexbox Styling */
+.nav-links ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    background-color: #121212;
+    box-shadow: 0 0 10px 0 #00aeff;
+    padding: 0;
+    width: 100%;
+}
+
+/* Dropdown Link Styling */
+.nav-links ul a {
+    color: #00aeff;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+/* Dropdown Menu Hover Effect */
+.nav-links ul a:hover {
+    box-shadow: 0 0 10px 0 #00aeff;
+    color: white;
+}
+
+/* Dropdown Menu Display on Hover */
+.nav-links li:hover ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ===========================
+   HAMBURGER MENU STYLING
+   =========================== */
+
+/* Hide checkbox */
+#hamburger-active {
+    display: none;
+}
+
+/* Hamburger Icon Styling */
+.hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none; /* Hidden by default on larger screens */
+    padding: 10px;
+    user-select: none; /* Prevents text selection */
+}
+
+/* ===========================
+   RESPONSIVE MOBILE STYLING
+   =========================== */
+
+@media screen and (max-width: 959px) {
+    /* Mobile Hamburger Icon Styling */
+    .hamburger {
+        display: block;
+        position: absolute;
+        z-index: 999;
+        top: 15px;
+        right: 20px;
+        color: #ff0000;
+        padding-top: 0%;
+    }
+
+    /* ===========================
+       NAVIGATION BAR STYLING
+       =========================== */
+
+    /* Mobile Navigation Flexbox Styling */
+    .nav-links {
+        display: none;
+        flex-direction: column; /* Stacks links vertically */
+        left: 0;
+        width: 85%;
+        background-color: #000000;
+        position: relative;
+    }
+
+    /* Mobile Navigation Items Flexbox Styling */
+    .nav-links li {
+        display: block;
+        width: fit-content;
+        padding: 10px;
+        position: relative; /* Ensures dropdown positioning works */
+    }
+
+    /* ===========================
+       DROPDOWN MENU STYLING
+       =========================== */
+
+    /* Mobile Navigation Dropdown Menu Flexbox Styling */
+    /*
+    .nav-links ul {
+        position: absolute;
+        top: 0%;
+        left: 100%;
+        background-color: #121212;
+        box-shadow: 0 0 10px 0 #00aeff;
+        padding: 0;
+        width: fit-content;
+    }*/
+
+    /* Dropdown Menu Display on Hover */
+    .nav-links li:hover ul {
+        display: none;
+        flex-direction: row;
+    }
+
+    /* Mobile Menu Display on Click */
+    #hamburger-active:checked + .hamburger + .nav-links {
+        display: flex;
+    }
+}
