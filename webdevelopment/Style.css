@@ -110,17 +110,13 @@ nav{
 }
 
 .about-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 1% 0 1%;
-    margin: auto;
-    font-size: large;
+    /*Placeholdedr Text*/
 }
 
 .about-text {
     flex: 2;
+    font-size: larger;
+    text-justify: space-evenly;
 }
 
 blockquote {
@@ -129,6 +125,7 @@ blockquote {
 
 .about-media {
     flex: 1;
+    flex-direction: row;
     text-align: center;
 }
 
@@ -184,7 +181,6 @@ blockquote {
     line-height: 1.6;
     padding: 0;
     border: none;
-    box-shadow: none
 }
 
 .project1, .project2, .project3 {
@@ -192,6 +188,25 @@ blockquote {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #333333;
     border-radius: 10px;
+}
+
+.Github-link {
+    color: #2f00ff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 2px solid #2f00ff;
+    padding: 10px;
+    border-radius: 5px;
+    display: inline-block;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.project-image{
+    height: 324px;
+    width: 576px;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 /* Reflection WebPage Section Layout */
@@ -303,6 +318,10 @@ blockquote {
         width: 100%;
         margin: 0;
         padding: 0;
+    }
+
+    .about-media{
+        flex-direction: row;
     }
 
     blockquote {

@@ -31,6 +31,7 @@ Tested:  April 4, 2025 Passed on W3C Validator
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Assets/Images/favicon-32x32.svg">
 
 </head>
 
@@ -46,9 +47,9 @@ Tested:  April 4, 2025 Passed on W3C Validator
             <li>
                 <a href="projects.html">Projects</a>
                 <ul class = project-links>
-                    <li><a href="#">Link 1</a></li>
-                    <li><a href="#">Link 2</a></li>
-                    <li><a href="#">Link 3</a></li>
+                    <li><a href="projects.html#project1">Minus Malus</a></li>
+                    <li><a href="projects.html#project2">Bee Balloon</a></li>
+                    <li><a href="projects.html#project3">Parser</a></li>
                 </ul>
             </li>
             <li><a href="reflection.html">Reflection</a></li>
@@ -64,7 +65,7 @@ Tested:  April 4, 2025 Passed on W3C Validator
     <main>
         <section class = projects-container>
             <div class = projects-text>
-                <div class = project1>
+                <div id = project1 class = project1>
                     <h2 class = projects-header2> UI/UX Design & Interactive Gameplay </h2>
                     <h3 class = projects-header3>  Minus Malus: Brain Game - Midterm Project for Game Development</h3>
                     <p> 
@@ -79,7 +80,7 @@ Tested:  April 4, 2025 Passed on W3C Validator
                     </p>
                 </div>
 
-                <div class = project2>
+                <div id = project2 class = project2>
                     <h2 class = projects-header2> Game Development and Physics Simulation </h2>
                     <h3 class = projects-header3> Bee Balloon: Brain Game - Final Project for Game Development </h3>
                     <p> 
@@ -93,7 +94,7 @@ Tested:  April 4, 2025 Passed on W3C Validator
                     </p>
                 </div>
 
-                <div class = project3>
+                <div id = project3 class = project3>
                 <h2 class = projects-header2> Compiler Design & Parsing Techniques </h2>
                 <h3 class = projects-header3> Python Parser ( ANTLR - Based ) </h3>
                     <p>
@@ -113,6 +114,17 @@ Tested:  April 4, 2025 Passed on W3C Validator
             </div>
             
             <div class=about-media>
+                <p>
+                    <img src ="Assets/Images/Midterm_Picture1.png" alt="Minus-Malus Picture" class = project-image>
+                    <a href="https://github.com/JoGallich2/Game-Design-Midterm-Project" class="Github-link">Minus Malus Game</a>
+                </p>
+                <p>
+                    <img src ="Assets/Images/Final_Picture1.png" alt="Minus-Malus Picture" class = project-image>
+                    <a href="https://github.com/JoGallich2/Game-Design-Final-Project" class="Github-link">Bee Balloon Game</a>
+                </p>
+                <p>
+                    <a href="Assets/JosephGallichioResume.pdf" class="Github-link">You Can View My Resume Here</a>
+                </p>
             </div>
         </section>
     </main>
