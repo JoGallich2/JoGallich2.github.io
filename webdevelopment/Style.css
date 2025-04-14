@@ -39,7 +39,9 @@ footer img:hover {
 
 .index-header,
 .about-header,
-.projects-header{
+.projects-header,
+.reflection-header,
+.contact-header{
     color: #000000;
     width: 100%;
     text-align: left;
@@ -62,7 +64,8 @@ nav{
 .index-container, 
 .about-container, 
 .projects-container, 
-.reflection-container {
+.reflection-container,
+.contact-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -88,12 +91,7 @@ nav{
     text-align: center;
 }
 
-.index-container {
-    justify-content: space-between;
-}
-
 .index-text {
-    flex: 2;
     line-height: 1.6;
 }
 
@@ -199,6 +197,13 @@ blockquote {
     border-radius: 5px;
     display: inline-block;
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.Github-link:hover{
+    transform: scale(1.2);
+    color: #00fff2;
+    background-color: #000000;
+    transition: transform 0.3s ease;
 }
 
 .project-image{
