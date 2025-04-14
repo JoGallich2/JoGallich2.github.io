@@ -3,6 +3,8 @@ header, footer {
     color: #000000;
     text-align: center;
     width: 100%;
+    background-image: url('Assets/Images/header-bg.jpg');
+    padding: 20px 10px;
 }
 
 footer{
@@ -42,7 +44,7 @@ footer img:hover {
 .projects-header,
 .reflection-header,
 .contact-header{
-    color: #000000;
+    color: #ffffff;
     width: 100%;
     text-align: left;
 }
@@ -107,14 +109,10 @@ nav{
     width: 66.5%;
 }
 
-.about-container {
-    /*Placeholdedr Text*/
-}
-
 .about-text {
     flex: 2;
     font-size: larger;
-    text-justify: space-evenly;
+    justify-content: space-evenly;
 }
 
 blockquote {
@@ -177,11 +175,10 @@ blockquote {
 .projects-text {
     flex: 2;
     line-height: 1.6;
-    padding: 0;
-    border: none;
 }
 
 .project1, .project2, .project3 {
+    display: flex;
     padding: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     border: 2px solid #333333;
@@ -205,6 +202,16 @@ blockquote {
     background-color: #000000;
     transition: transform 0.3s ease;
 }
+
+.video-parser {
+    width: 576px;
+    height: 324px;
+    border-radius: 10px;
+    border: #000000 solid 2px;
+    box-shadow: 5px 4px 8px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin: 20px auto; /* centers it horizontally */
+  }
 
 .project-image{
     height: 324px;
@@ -231,7 +238,7 @@ blockquote {
     font-weight: bolder;
 }
 
-@media screen and (max-Width:959px) {
+@media screen and (max-width:959px) {
 
     /* Ensure full-width content */
     body {
@@ -243,23 +250,30 @@ blockquote {
         margin: 20px 0;
         width: 100%;
     }
-    .About-Quote{
+
+    .About-Quote {
         display: none;
     }
 
-    /* Adjust header */
+    /* Adjust headers */
     .index-header,
-    .about-header {
+    .about-header,
+    .projects-header,
+    .projects-header2,
+    .projects-header3,
+    .reflection-header,
+    .contact-header {
         text-align: center;
         font-size: x-large;
         padding-top: 35px;
     }
 
-    /* Stack content in a single column */
+    /* Stack content vertically */
     .index-container,
     .about-container,
     .projects-container,
-    .reflection-container {
+    .reflection-container,
+    .contact-container {
         flex-direction: column;
         text-align: center;
         width: 90%;
@@ -268,16 +282,38 @@ blockquote {
     }
 
     .about-text,
-    .about-media {
+    .about-media,
+    .projects-text,
+    .reflection-text {
         text-align: center;
     }
 
-    /* Adjust blockquote for better readability */
+    /* Project blocks stack vertically */
+    .project1,
+    .project2,
+    .project3 {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .project-image,
+    .video-parser {
+        width: 100%;
+        height: auto;
+    }
+
+    .Github-link {
+        font-size: 1rem;
+        padding: 8px 12px;
+    }
+
+    /* Adjust blockquote */
     blockquote {
-        font-size: 16px;
+        font-size: clamp(.5rem, 2vw, 2rem);
         text-align: center;
         padding: 10px;
-        font-size: clamp(.5rem, 2vw, 2rem);
     }
 
     /* Footer adjustments */
