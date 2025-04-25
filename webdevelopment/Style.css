@@ -297,6 +297,48 @@ blockquote {
     background-color: #007acc;
 }
 
+/* Table Styling */
+.reflection-table-wrapper {
+    margin: 2rem auto;
+    padding: 1rem;
+    max-width: 90%;
+    overflow-x: auto;
+    border: 1px solid #ccc;
+    background-color: #fdfdfd;
+}
+
+.reflection-table-wrapper figcaption {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 2px solid #4e6e81;
+}
+
+thead tr,
+tbody tr:last-child {
+    background-color: #cde2f2;
+}
+
+th, td {
+    border: 1px solid #4e6e81;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+/* Alternate row colors */
+tbody tr:nth-child(odd) {
+    background-color: #f0f8ff;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e6f0fa;
+}
+
 @media screen and (max-width: 959px) {
 
     /* Body */
@@ -403,6 +445,36 @@ blockquote {
     footer img {
         margin: 0 5px;
     }
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+        display: block;
+    }
+
+    thead tr {
+        display: none;
+    }
+
+    td {
+        position: relative;
+        padding-left: 50%;
+    }
+
+    td::before {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 45%;
+        padding-left: 10px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+
+    td:nth-of-type(1)::before { content: "Area"; }
+    td:nth-of-type(2)::before { content: "Key Takeaway"; }
+    td:nth-of-type(3)::before { content: "Future Goal"; }
 }
 
 /* Wepgage Print Section */
