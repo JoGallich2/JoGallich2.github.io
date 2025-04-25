@@ -297,19 +297,21 @@ blockquote {
     background-color: #007acc;
 }
 
-@media screen and (max-width:959px) {
+@media screen and (max-width: 959px) {
 
-    /* Ensure full-width content */
+    /* Body */
     body {
         margin: 0;
         padding: 0;
+        font-size: 16px;
     }
 
+    /* Hide decorative quote */
     .About-Quote {
         display: none;
     }
 
-    /* Adjust headers */
+    /* Responsive headers */
     .index-header,
     .about-header,
     .projects-header,
@@ -318,62 +320,88 @@ blockquote {
     .reflection-header,
     .contact-header {
         text-align: center;
-        font-size: x-large;
-        padding-top: 35px;
+        font-size: 1.5rem;
+        padding: 20px 10px 10px;
     }
 
-    /* Stack content vertically */
+    /* Containers stack vertically */
     .index-container,
     .about-container,
     .projects-container,
     .reflection-container,
     .contact-container {
         flex-direction: column;
+        align-items: center;
         text-align: center;
-        width: 90%;
-        margin: auto;
-        font-size: clamp(.5rem, 2vw, 2rem);
+        width: 95%;
+        margin: 0 auto;
+        padding: 10px 0;
+        font-size: 1rem;
     }
 
+    /* Adjust text sections */
     .about-text,
     .about-media,
     .projects-text,
-    .reflection-text {
-        text-align: center;
+    .reflection-text,
+    .contact-text {
+        width: 100%;
+        padding: 15px;
+        box-sizing: border-box;
     }
 
-    /* Project blocks stack vertically */
+    /* Project blocks stacked */
     .project1,
     .project2,
     .project3 {
         flex-direction: column;
         align-items: center;
-        gap: 15px;
-        padding: 15px;
+        padding: 15px 10px;
+        gap: 10px;
     }
 
     .project-image,
-    .video-parser {
+    .video-parser,
+    .video-resume {
         width: 100%;
         height: auto;
+        max-width: 100%;
     }
 
-    .Github-link {
-        font-size: 1rem;
-        padding: 8px 12px;
-    }
-
-    /* Adjust blockquote */
-    blockquote {
-        font-size: clamp(.5rem, 2vw, 2rem);
+    /* Link/button styling */
+    .Github-link,
+    .resume-link {
+        width: 90%;
         text-align: center;
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    /* Contact form fields full-width */
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    /* Blockquotes */
+    blockquote {
+        font-size: 1rem;
         padding: 10px;
     }
 
-    /* Footer adjustments */
+    /* Footer tweaks */
     footer {
         font-size: 14px;
         padding: 20px;
+        text-align: center;
+    }
+
+    footer img {
+        margin: 0 5px;
     }
 }
 
