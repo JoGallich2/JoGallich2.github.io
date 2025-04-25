@@ -380,7 +380,7 @@ blockquote {
     /* Contact form fields full-width */
     .contact-form input,
     .contact-form textarea {
-        width: 100%;
+        width: 95%;
     }
 
     .contact-form button {
