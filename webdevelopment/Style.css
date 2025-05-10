@@ -241,6 +241,10 @@ blockquote {
 }
 
 /* Contact WebPage Section Layout */
+
+.contact-header{
+    display: none
+}
 .contact-container {
     display: flex;
     justify-content: center;
@@ -257,11 +261,11 @@ blockquote {
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     width: 100%;
-    max-width: 600px;
+    max-width: 950px;
 }
 
 .contact-form {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 15px;
     margin-top: 20px;

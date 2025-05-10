@@ -12,9 +12,9 @@ School/Term:  University of Missouri, Spring 2025
 
 Developed: April 2, 2025
 
-Updated: May 4, 2025
+Updated: April 9, 2025
 
-Tested: May 4, 2025 Passed on W3C Validator
+Tested: April 9, 2025 Passed on W3C Validator
 
 ******************************************************************************
 
@@ -32,6 +32,7 @@ Tested: May 4, 2025 Passed on W3C Validator
     <link rel="stylesheet" href="nav.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/png" href="Assets/Images/favicon-32x32.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -98,6 +99,14 @@ Tested: May 4, 2025 Passed on W3C Validator
             | All Rights Reserved.
         </p>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.contact-header').fadeIn(1000);
+            $('.contact-form').delay(500).slideDown(1000);
+            $('.social-links').delay(1000).fadeIn(1500);
+        });
+    </script>
 </body>
 
 </html>
