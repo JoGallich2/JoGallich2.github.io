@@ -1,0 +1,146 @@
+<!--
+
+*****************************************************************************
+
+Title:  Home Page
+
+Use:  The main page for users to access when visiting my site
+
+Author:  Joseph Gallichio
+
+School/Term:  University of Missouri, Spring 2025
+
+Developed: Feb 15, 2025
+
+Updated: July 9, 2026 — redesigned with an interactive hero, scroll
+reveals, and a token-based design system (see Style.css)
+
+******************************************************************************
+
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Joseph Gallichio | Data Analytics Engineer & Software Developer</title>
+    <meta name="description" content="Portfolio of Joseph Gallichio, a University of Missouri Computer Science graduate working in data analytics engineering, with a background in software development, cybersecurity, and game development.">
+    <meta property="og:title" content="Joseph Gallichio | Portfolio">
+    <meta property="og:description" content="Computer Science graduate (Mizzou '26) working in data analytics engineering, with a background in software development, cybersecurity, and game development.">
+    <meta property="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Assets/Images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+    <nav>
+        <input type="checkbox" id="hamburger-active">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand"><span class="dot"></span>gallichio.dev</a>
+            <label for="hamburger-active" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class="project-links">
+                        <li><a href="projects.html#project1">Aces High Casino</a></li>
+                        <li><a href="projects.html#project2">Minus Malus</a></li>
+                        <li><a href="projects.html#project3">Bee Balloon</a></li>
+                        <li><a href="projects.html#project4">Parser</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <p class="eyebrow">B.S. Computer Science · University of Missouri '26</p>
+            <h1 class="hero-name">Joseph Gallichio</h1>
+            <p class="hero-terminal">
+                <span class="prompt">&gt;</span>
+                <span id="typed-roles" data-roles='["Data Analytics Engineer_", "Software Developer_", "Cybersecurity Enthusiast_", "Esports Team Captain_"]'></span><span class="cursor" aria-hidden="true"></span>
+            </p>
+            <p class="hero-lede">
+                I'm a Computer Science graduate from the University of Missouri, now
+                working as a Data Analytics Engineer Intern at Delta Defence — building
+                on a background in software development, cybersecurity, and game
+                development, plus a few years leading a nationally-ranked esports team.
+            </p>
+            <div class="hero-actions">
+                <a href="projects.html" class="btn btn-primary">View Projects</a>
+                <a href="about.html" class="btn btn-outline">More About Me</a>
+                <a href="Assets/JosephGallichioResume.pdf" class="btn btn-outline">Resume ↓</a>
+            </div>
+            <div class="hero-stats">
+                <div class="hero-stat">
+                    <span class="num">Top 0.1%</span>
+                    <span class="label">Rocket League — Global Rank</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="num">3.30</span>
+                    <span class="label">GPA — Dean's List, 5 Semesters</span>
+                </div>
+                <div class="hero-stat">
+                    <span class="num">4</span>
+                    <span class="label">Shipped Projects</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main>
+        <section class="reveal">
+            <div class="section-header">
+                <p class="eyebrow">Who I Am</p>
+                <h2 class="section-title">Where curiosity meets code</h2>
+            </div>
+            <div class="about-grid" style="grid-template-columns: 1fr 1fr;">
+                <div class="card">
+                    <h3>What I'm about</h3>
+                    <p style="color: var(--text-dim);">
+                        I graduated from the University of Missouri with a B.S. in Computer
+                        Science, a minor in Information Technology, and certificates in
+                        Cyber Security and Information Systems & Technology. I'm currently a
+                        Data Analytics Engineer Intern at Delta Defence, working in SQL and
+                        Snowflake — with a background spanning software development,
+                        cybersecurity, and game development.
+                    </p>
+                </div>
+                <div class="card">
+                    <h3>Who it's for</h3>
+                    <p style="color: var(--text-dim);">
+                        Whether you're a recruiter sizing up a future teammate, a hiring
+                        manager reviewing my work, or a fellow developer looking to
+                        collaborate, you'll find a clear picture here of what I've built and
+                        where I'm headed next.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span data-year>2026</span> Joseph Gallichio
+            | <img src="Assets/Images/icons8-gmail-48.png" alt="Gmail"> <a href="mailto:joeygallichio2@gmail.com">joeygallichio2@gmail.com</a>
+            | <img src="Assets/Images/icons8-phone-50.png" alt="Phone"> <a href="tel:+16308999824">(630) 899-9824</a>
+            | All Rights Reserved.
+        </p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

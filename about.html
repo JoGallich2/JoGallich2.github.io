@@ -1,0 +1,170 @@
+<!--
+
+*****************************************************************************
+
+Title:  About Page
+
+Use:  To inform users about my information.
+
+Author:  Joseph Gallichio
+
+School/Term:  University of Missouri, Spring 2025
+
+Developed: Feb 15, 2025
+
+Updated: July 9, 2026 — redesigned with skill tags, timeline, sticky media
+
+******************************************************************************
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>About Me - Joseph Gallichio</title>
+    <meta name="description" content="About Joseph Gallichio — University of Missouri Computer Science graduate, Data Analytics Engineer Intern at Delta Defence, Rocket League esports captain, and builder of software, security, and game projects.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Assets/Images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="hamburger-active">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand"><span class="dot"></span>gallichio.dev</a>
+            <label for="hamburger-active" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class="project-links">
+                        <li><a href="projects.html#project1">Aces High Casino</a></li>
+                        <li><a href="projects.html#project2">Minus Malus</a></li>
+                        <li><a href="projects.html#project3">Bee Balloon</a></li>
+                        <li><a href="projects.html#project4">Parser</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="padding-top: 48px;">
+        <section class="about-container">
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <p class="eyebrow">About Me</p>
+                    <h1>Joseph Gallichio</h1>
+
+                    <blockquote class="about-quote">
+                        "It doesn't matter whether you win by an inch or a mile, winning is winning"
+                        <cite>— Dom Toretto, The Fast And The Furious</cite>
+                    </blockquote>
+
+                    <p>
+                        My name is <strong>Joseph Gallichio</strong>, and I graduated from the
+                        University of Missouri&ndash;Columbia (Mizzou) in May 2026 with a Bachelor
+                        of Science in Computer Science and a minor in Information Technology, along
+                        with undergraduate certificates in <em>Cyber Security</em> and
+                        <em>Information Systems &amp; Technology</em>. I graduated with a 3.30 GPA,
+                        made Dean's List five semesters, and was a Mark Twain Scholarship recipient.
+                    </p>
+
+                    <div class="skills-row">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C / C++</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">Snowflake</span>
+                        <span class="skill-tag">dbt Cloud</span>
+                        <span class="skill-tag">AWS</span>
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                    </div>
+
+                    <p>
+                        I'm currently a <strong>Data Analytics Engineer Intern at Delta Defence
+                        LLC</strong> in West Bend, WI, where I develop and optimize SQL queries in
+                        Snowflake for data extraction and transformation, clean and debug datasets
+                        to resolve data quality issues, and work with the team to troubleshoot
+                        discrepancies across data sources. Before that, I was an <strong>IT Support
+                        Intern at NMG Accounting Solutions</strong>, where I assembled and deployed
+                        desktop systems, diagnosed hardware/network issues, and helped maintain IT
+                        documentation.
+                    </p>
+
+                    <p>
+                        Outside of work, I was Team Captain, Competition Manager, and a Premier
+                        Team player for Mizzou Club Rocket League. I led competitive teams through
+                        the NACE and NECC collegiate leagues, coordinated strategy and practice
+                        schedules, organized and hosted tournaments, and helped my team reach a
+                        <strong> top 0.1% global ranking</strong>. It taught me as much about
+                        leadership and communication under pressure as any class did.
+                    </p>
+
+                    <p>
+                        I'm also passionate about building custom PCs — combining my love for
+                        technology with hands-on problem-solving. Right now I'm building
+                        <strong> Aces High Casino</strong>, a full-stack web app, in my own time
+                        while I look for full-time opportunities in software engineering, data,
+                        and cybersecurity.
+                    </p>
+
+                    <h3 style="margin-top: 40px;">A quick timeline</h3>
+                    <ul class="timeline">
+                        <li>
+                            <strong>Data Analytics Engineer Intern, Delta Defence LLC</strong>
+                            June 2026 &ndash; Present. SQL/Snowflake pipelines, data quality, and cross-team debugging.
+                        </li>
+                        <li>
+                            <strong>B.S. Computer Science, University of Missouri</strong>
+                            Graduated May 2026 with a 3.30 GPA, minor in IT, and certs in Cyber Security & IST.
+                        </li>
+                        <li>
+                            <strong>IT Support Intern, NMG Accounting Solutions</strong>
+                            May &ndash; Aug 2025. Desktop deployment, hardware/network troubleshooting.
+                        </li>
+                        <li>
+                            <strong>Team Captain, Mizzou Club Rocket League</strong>
+                            Oct 2024 &ndash; May 2026. Led NACE/NECC competition play to a top 0.1% global rank.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-media reveal">
+                    <img src="Assets/ProfessionalPhoto.jpg" alt="Joseph Gallichio's Professional Photo" class="about-photo">
+                    <video class="video-resume" controls>
+                        <source src="Assets/Resume-Video.mp4" type="video/mp4">
+                    </video>
+                    <a href="Assets/JosephGallichioResume.pdf" class="btn btn-primary" style="width: 100%; max-width: 320px; justify-content: center; box-sizing: border-box;">View My Resume</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span data-year>2026</span> Joseph Gallichio
+            | <img src="Assets/Images/icons8-gmail-48.png" alt="Gmail"> <a href="mailto:joeygallichio2@gmail.com">joeygallichio2@gmail.com</a>
+            | <img src="Assets/Images/icons8-phone-50.png" alt="Phone"> <a href="tel:+16308999824">(630) 899-9824</a>
+            | All Rights Reserved.
+        </p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

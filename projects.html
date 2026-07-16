@@ -1,0 +1,193 @@
+<!--
+
+*****************************************************************************
+
+Title:  Projects Page
+
+Use:  To provide users with information of projects I have worked on.
+
+Author:  Joseph Gallichio
+
+School/Term:  University of Missouri, Spring 2025
+
+Developed: March 7, 2025
+
+Updated: July 9, 2026 — redesigned as tagged, alternating project cards
+
+******************************************************************************
+
+-->
+
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <title>Projects - Joseph Gallichio</title>
+    <meta name="description" content="Projects by Joseph Gallichio: a full-stack casino web app, brain-training games built in Unity, and a Python parser built with ANTLR.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="Assets/Images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="nav.css">
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="hamburger-active">
+        <div class="nav-inner">
+            <a href="index.html" class="nav-brand"><span class="dot"></span>gallichio.dev</a>
+            <label for="hamburger-active" class="hamburger">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="projects.html">Projects</a>
+                    <ul class="project-links">
+                        <li><a href="projects.html#project1">Aces High Casino</a></li>
+                        <li><a href="projects.html#project2">Minus Malus</a></li>
+                        <li><a href="projects.html#project3">Bee Balloon</a></li>
+                        <li><a href="projects.html#project4">Parser</a></li>
+                    </ul>
+                </li>
+                <li><a href="reflection.html">Reflection</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main style="padding-top: 48px;">
+        <div class="section-header">
+            <p class="eyebrow">Selected Work</p>
+            <h1 class="section-title">My Projects</h1>
+            <p class="section-sub">Four projects spanning full-stack development, game development, UX design, and compiler theory.</p>
+        </div>
+
+        <section class="projects-container">
+            <div id="project1" class="card project-card reveal">
+                <div class="projects-text">
+                    <span class="project-index">01 / Full-Stack Development · In Progress</span>
+                    <h2 class="project-title">Aces High Casino</h2>
+                    <p class="project-kicker">Full-Stack Online Casino & Poker Web App</p>
+                    <p class="project-desc">
+                        An ongoing full-stack online casino/poker web application with user
+                        authentication and profile features. I'm designing the backend systems
+                        for game-state management and database integration, and collaborating
+                        with a small team using a standard Git/GitHub workflow — branches, pull
+                        requests, and code review.
+                    </p>
+                    <div class="tag-row">
+                        <span class="skill-tag">React</span>
+                        <span class="skill-tag">Node.js</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">Git / GitHub</span>
+                    </div>
+                    <a href="https://github.com/JoGallich2" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub ↗</a>
+                </div>
+                <div class="projects-media project-media">
+                    <div class="project-placeholder">
+                        <span class="project-placeholder-icon">&#9824;</span>
+                        <span>In development — screenshots coming soon</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="project2" class="card project-card reveal">
+                <div class="projects-text">
+                    <span class="project-index">02 / Game Development</span>
+                    <h2 class="project-title">Minus Malus</h2>
+                    <p class="project-kicker">UI/UX Design & Interactive Gameplay — Midterm Project</p>
+                    <p class="project-desc">
+                        A brain-training game that sharpens processing speed, working memory, and
+                        cognitive flexibility, inspired by Cognifit's Minus Malus. The player
+                        controls a cannon and uses number keys to fire values that reduce
+                        falling crates down to exactly zero — overshoot or let one hit the
+                        ground, and points are lost. Three levels ramp up spawn rate, crate
+                        count, and fall speed.
+                    </p>
+                    <div class="tag-row">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Game Design</span>
+                    </div>
+                    <a href="https://github.com/JoGallich2/Game-Design-Midterm-Project" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub ↗</a>
+                </div>
+                <div class="projects-media project-media">
+                    <img src="Assets/Images/Midterm_Picture1.png" alt="Minus Malus gameplay screenshot">
+                </div>
+            </div>
+
+            <div id="project3" class="card project-card reveal">
+                <div class="projects-text">
+                    <span class="project-index">03 / Game Development</span>
+                    <h2 class="project-title">Bee Balloon</h2>
+                    <p class="project-kicker">Physics Simulation & Data Collection — Final Project</p>
+                    <p class="project-desc">
+                        A cognitive-training game built to strengthen reaction time, spatial
+                        awareness, and problem-solving, inspired by Cognifit's Bee Balloon. The
+                        player guides a bee through predefined paths to pop balloons while
+                        dodging red zones and bombs, across four progressively harder levels
+                        using interpolation, easing, and Bezier-curve movement. It also logs
+                        player performance data — duration, score, and outcomes — for research
+                        use, with a full pause system and real-time stat UI.
+                    </p>
+                    <div class="tag-row">
+                        <span class="skill-tag">Unity</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Physics Simulation</span>
+                        <span class="skill-tag">Data Collection</span>
+                    </div>
+                    <a href="https://github.com/JoGallich2/Game-Design-Final-Project" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub ↗</a>
+                </div>
+                <div class="projects-media project-media">
+                    <img src="Assets/Images/Final_Picture1.png" alt="Bee Balloon gameplay screenshot">
+                </div>
+            </div>
+
+            <div id="project4" class="card project-card reveal">
+                <div class="projects-text">
+                    <span class="project-index">04 / Compiler Design</span>
+                    <h2 class="project-title">Python Parser</h2>
+                    <p class="project-kicker">Lexical & Syntax Analysis, Built With ANTLR</p>
+                    <p class="project-desc">
+                        A group project implementing a lexical and syntax analyzer for Python
+                        3.x. Centered on constructing a Context-Free Grammar to parse arithmetic
+                        operations, assignments, conditionals, and loops — generating a parse
+                        tree for visualization while preserving Python's indentation
+                        sensitivity. Delivered in three stages: operators, conditionals, and
+                        nested loop structures, each verified against predefined test code.
+                    </p>
+                    <div class="tag-row">
+                        <span class="skill-tag">ANTLR</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">Compiler Design</span>
+                        <span class="skill-tag">Grammars</span>
+                    </div>
+                    <a href="https://github.com/JoGallich2/Parser-Project" class="btn btn-outline" target="_blank" rel="noopener">View on GitHub ↗</a>
+                </div>
+                <div class="projects-media project-media">
+                    <video controls>
+                        <source src="Assets/ParserProject-video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span data-year>2026</span> Joseph Gallichio
+            | <img src="Assets/Images/icons8-gmail-48.png" alt="Gmail"> <a href="mailto:joeygallichio2@gmail.com">joeygallichio2@gmail.com</a>
+            | <img src="Assets/Images/icons8-phone-50.png" alt="Phone"> <a href="tel:+16308999824">(630) 899-9824</a>
+            | All Rights Reserved.
+        </p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to top">&#8593;</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
